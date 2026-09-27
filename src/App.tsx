@@ -6,7 +6,6 @@ import { HomeView } from './views/HomeView.tsx';
 import { DashboardView } from './views/DashboardView.tsx';
 import { SkillGapView } from './views/SkillGapView.tsx';
 import { RecommendationsView } from './views/RecommendationsView.tsx';
-import { CodingContestView } from './views/CodingContestView.tsx';
 import { SearchJobsView } from './views/SearchJobsView.tsx';
 import { CoursesView } from './views/CoursesView.tsx';
 import { MentorshipView } from './views/MentorshipView.tsx';
@@ -336,13 +335,7 @@ export default function App() {
                   />
                 )}
 
-                {currentPath === 'coding-contests' && (
-                  <CodingContestView
-                    candidate={candidate}
-                    onScoreUpdated={handleScoreUpdated}
-                    onNavigate={setCurrentPath}
-                  />
-                )}
+
 
                 {(currentPath === 'search-jobs' || currentPath === 'saved-jobs' || currentPath === 'applications') && (
                   <SearchJobsView
@@ -399,8 +392,7 @@ export default function App() {
         onClose={() => setIsActionPlanOpen(false)}
         candidate={candidate}
         onStartStep={(step) => {
-          if (step === 1) setCurrentPath('coding-contests');
-          else if (step === 2) setCurrentPath('courses');
+          if (step === 2) setCurrentPath('courses');
         }}
       />
 

@@ -115,7 +115,7 @@ export const HomeView: React.FC<HomeViewProps> = ({
           <div className="hidden lg:flex items-center gap-7 text-[13px] font-semibold text-[#464554]">
             <a href="#features" className="hover:text-[#4338ca] transition-colors">Features</a>
             <a href="#simulator" className="hover:text-[#4338ca] transition-colors">Readiness Simulator</a>
-            <a href="#arena" className="hover:text-[#4338ca] transition-colors">Coding Arena</a>
+
             <a href="#mentors" className="hover:text-[#4338ca] transition-colors">Mentorship</a>
             <a href="#stories" className="hover:text-[#4338ca] transition-colors">Placements</a>
             <a href="#faq" className="hover:text-[#4338ca] transition-colors">FAQ</a>
@@ -185,13 +185,7 @@ export const HomeView: React.FC<HomeViewProps> = ({
             >
               Readiness Simulator
             </a>
-            <a
-              href="#arena"
-              onClick={() => setMobileNavOpen(false)}
-              className="py-2 text-[14px] font-semibold text-[#464554] hover:text-[#4338ca]"
-            >
-              Live Coding Arena
-            </a>
+
             <a
               href="#mentors"
               onClick={() => setMobileNavOpen(false)}
@@ -746,7 +740,7 @@ export const HomeView: React.FC<HomeViewProps> = ({
               Engineered For Every Stage of Campus Recruitment
             </h2>
             <p className="text-[14px] sm:text-[16px] text-[#464554] mt-2">
-              From automated resume parsing to live coding challenge verification and senior mentor bookings.
+              From automated resume parsing to senior mentor bookings.
             </p>
           </div>
 
@@ -773,27 +767,7 @@ export const HomeView: React.FC<HomeViewProps> = ({
               </button>
             </div>
 
-            {/* Card 2 */}
-            <div id="arena" className="p-6 rounded-2xl bg-[#f8f9ff] border border-[#c7c4d7]/30 hover:border-[#4338ca] hover:shadow-md transition-all flex flex-col justify-between">
-              <div className="flex flex-col gap-3">
-                <div className="w-12 h-12 rounded-xl bg-[#712ae2] text-white flex items-center justify-center">
-                  <span className="material-symbols-outlined text-[26px]">terminal</span>
-                </div>
-                <h3 className="font-['Manrope'] text-[1.25rem] font-bold text-[#0b1c30]">
-                  Live Test-Driven Coding Arena
-                </h3>
-                <p className="text-[13px] text-[#464554] leading-relaxed">
-                  Write and evaluate code against 10 real test cases in an interactive browser IDE. Verify concurrency, anti-DDoS rate limits, and memory efficiency.
-                </p>
-              </div>
-              <button
-                onClick={() => onNavigate('coding-contests')}
-                className="mt-5 inline-flex items-center gap-1.5 text-[13px] font-bold text-[#712ae2] hover:underline cursor-pointer"
-              >
-                <span>Enter Contest Arena #01</span>
-                <span className="material-symbols-outlined text-[16px]">chevron_right</span>
-              </button>
-            </div>
+
 
             {/* Card 3 */}
             <div id="mentors" className="p-6 rounded-2xl bg-[#f8f9ff] border border-[#c7c4d7]/30 hover:border-[#4338ca] hover:shadow-md transition-all flex flex-col justify-between">
@@ -1019,7 +993,7 @@ export const HomeView: React.FC<HomeViewProps> = ({
               <span className="font-bold uppercase tracking-wider text-white/90 mb-1">Platform Tools</span>
               <button onClick={() => onNavigate('dashboard')} className="text-left text-white/70 hover:text-white transition-colors cursor-pointer">Candidate Dashboard</button>
               <button onClick={() => onNavigate('skill-gap')} className="text-left text-white/70 hover:text-white transition-colors cursor-pointer">Skill Gap Diagnostic</button>
-              <button onClick={() => onNavigate('coding-contests')} className="text-left text-white/70 hover:text-white transition-colors cursor-pointer">Live Coding Arena</button>
+
               <button onClick={() => onNavigate('recommendations')} className="text-left text-white/70 hover:text-white transition-colors cursor-pointer">14-Day Sprint</button>
               <button onClick={() => onNavigate('mentorship')} className="text-left text-white/70 hover:text-white transition-colors cursor-pointer">Book Mentor</button>
             </div>

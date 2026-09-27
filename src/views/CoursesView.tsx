@@ -103,12 +103,7 @@ export const CoursesView: React.FC<CoursesViewProps> = ({ onNavigate }) => {
             <span className="text-[11px] text-[#777586]">
               {completedCount} of {modules.length} modules completed
             </span>
-            <button
-              onClick={() => onNavigate('coding-contests')}
-              className="w-full py-2 bg-[#4338ca] hover:bg-[#2a14b4] text-white text-[12px] font-bold rounded-lg transition-colors mt-1 cursor-pointer"
-            >
-              Practice in Coding Arena →
-            </button>
+
           </div>
         </div>
       </div>

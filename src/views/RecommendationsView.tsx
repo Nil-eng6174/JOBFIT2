@@ -405,13 +405,7 @@ export const RecommendationsView: React.FC<RecommendationsViewProps> = ({
               </div>
             </div>
 
-            <button
-              onClick={() => onNavigate('coding-contests')}
-              className="w-full py-2.5 px-4 rounded-lg bg-[#dce9ff] hover:bg-[#d3e4fe] text-[#0b1c30] text-[13px] font-semibold flex items-center justify-center gap-2 transition-colors cursor-pointer"
-            >
-              <span>Practice in Coding Arena</span>
-              <span className="material-symbols-outlined text-[18px]">terminal</span>
-            </button>
+
           </div>
         </div>
       </div>
@@ -610,15 +604,7 @@ export const RecommendationsView: React.FC<RecommendationsViewProps> = ({
               </div>
             </div>
 
-            <div className="p-6 pt-0">
-              <button
-                onClick={() => onNavigate('coding-contests')}
-                className="w-full py-2.5 px-4 rounded-lg bg-[#dce9ff] hover:bg-[#d3e4fe] text-[#0b1c30] text-[13px] font-semibold flex items-center justify-center gap-2 transition-all cursor-pointer"
-              >
-                <span>Enter Contest Arena</span>
-                <span className="material-symbols-outlined text-[18px]">sports_esports</span>
-              </button>
-            </div>
+
           </div>
         </div>
       </div>

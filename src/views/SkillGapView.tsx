@@ -487,13 +487,7 @@ export const SkillGapView: React.FC<SkillGapViewProps> = ({
               <span className="material-symbols-outlined text-[20px] text-[#4338ca]">route</span>
               <span>View Personalized 3-Step Action Plan</span>
             </button>
-            <button
-              onClick={() => onNavigate('coding-contests')}
-              className="inline-flex items-center justify-center gap-1.5 px-6 py-3 rounded-lg bg-[#2a14b4] text-[13px] font-bold text-white hover:bg-[#4338ca] shadow-md transition-all cursor-pointer"
-            >
-              <span>Enter Contest Arena</span>
-              <span className="material-symbols-outlined text-[20px]">arrow_forward</span>
-            </button>
+
           </div>
         </div>
       </div>

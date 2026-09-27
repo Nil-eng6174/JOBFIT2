@@ -39,7 +39,6 @@ export const Sidebar: React.FC<SidebarProps> = ({
       title: 'Career Growth',
       items: [
         { id: 'skill-gap', label: 'Skill Gap', icon: 'tune' },
-        { id: 'coding-contests', label: 'Coding Arena', icon: 'terminal', badge: 'LIVE' },
         { id: 'recommendations', label: 'Recommendations', icon: 'auto_awesome', badge: 'NEW' },
         { id: 'mentorship', label: 'Mentorship', icon: 'diversity_3' },
         { id: 'courses', label: 'Courses', icon: 'school' },

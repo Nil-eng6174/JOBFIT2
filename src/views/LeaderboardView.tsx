@@ -34,12 +34,7 @@ export const LeaderboardView: React.FC<LeaderboardViewProps> = ({ candidate, onN
           </p>
         </div>
 
-        <button
-          onClick={() => onNavigate('coding-contests')}
-          className="px-5 py-2.5 bg-[#4338ca] hover:bg-[#2a14b4] text-white text-[13px] font-bold rounded-lg shadow-sm transition-all cursor-pointer"
-        >
-          Enter Live Arena
-        </button>
+
       </div>
 
       {/* Standings Table */}
