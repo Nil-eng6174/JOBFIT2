@@ -1,0 +1,6 @@
+{
+  "name": "JobFit Career Intelligence",
+  "description": "AI-powered career workspace for engineering students and software developers featuring ATS skill gap analytics, live Node.js & Express coding arenas, and personalized growth sprints.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
